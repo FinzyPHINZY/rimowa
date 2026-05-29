@@ -1,6 +1,6 @@
 const Visit = () => {
   return (
-    <section className="relative flex min-h-[50vh] flex-col items-center justify-center overflow-hidden px-6 py-16 text-center text-white">
+    <section className="relative flex min-h-[60vh] flex-col items-center justify-center overflow-hidden px-6 py-16 text-center text-white">
       <div
         aria-hidden
         className="absolute inset-0 bg-[url('/visit.avif')] bg-cover bg-center bg-no-repeat brightness-[0.6]"

@@ -1,0 +1,35 @@
+.menu-list {
+  display: inline-block;
+  flex: 1;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+
+.menu-list h3 {
+  color: #b2ada6;
+  margin-bottom: 16px;
+}
+
+.list-content {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+.list-content li {
+  line-height: 28px;
+  list-style: none;
+}
+
+.list-content a {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
