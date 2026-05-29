@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const HeroSection = () => {
   return (
-    <section className="relative flex min-h-screen w-full items-center justify-center">
+    <section className="relative flex min-h-screen w-full items-center justify-center mb-12">
       <Image
         src="/hero.avif"
         alt=""
