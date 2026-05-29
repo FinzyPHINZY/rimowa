@@ -1,0 +1,60 @@
+@property --transformY-scale {
+  syntax: '<percentage>';
+  inherits: true;
+  initial-value: 100%;
+}
+
+.category-card {
+  --transformY-scale: 108%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  opacity: var(--parallax-ratio, 1);
+  transform: translateY(
+    calc((1 - var(--parallax-ratio, 1)) * var(--transformY-scale))
+  );
+  transition:
+    transform 0.5s cubic-bezier(0.33, 1, 0.68, 1),
+    opacity 0.5s ease,
+    --transformY-scale 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.category-card__image-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.category-card__image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto 630 / 790;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: transform;
+}
+
+.category-card__link {
+  display: block;
+  padding: 1rem;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #0d0900;
+  background-color: #fff;
+}
+
+.category-card:hover {
+  --transformY-scale: 100%;
+  cursor: pointer;
+}
+
+.category-card:hover .category-card__image {
+  transform: scale(1.06);
+}
